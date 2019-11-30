@@ -1,29 +1,17 @@
-# README #
+ThemeBox
+=========
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Hi. I'm a starter theme called `ThemeBox`.
 
-### What is this repository for? ###
+Getting Started
+---------------
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+The first thing you want to do is copy the `themebox` directory and change the name to something else (like, say, `theme-one`), and then you'll need to do a three-step find and replace on the name in all the templates.
 
-### How do I get set up? ###
+1. Search for: `'themebox'` and replace with: `'theme-one'`.
+2. Rename `themebox.pot` from `languages` folder to use the theme's slug
+3. Update or delete this readme.
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+Good luck!
