@@ -17,3 +17,5 @@ gulp.task('sass', function () {
 		.pipe(autoprefixer())		
 		.pipe(gulp.dest(output));
 });
+
+gulp.task('default', gulp.series(['sass']));
