@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+#Variables
+--------------------------------------------------------------*/
+
+/*
+Initial values should be defined through SASS Variables
+but variables which need have to be changed depending on dark/light mode
+or for different breakpoints should be defined as CSS Variables
+*/
+
+// Colors
+$color__white: #ffffff;
+$color__black: #000000;
+$color__gray--dark: #222222;
+$color__gray--darker: #1c1c1c;
+$color__gray--light: #eeeeee;
+
+$color__amber: #FFB300;
+$color__red: #CF3A3A;
+$color__pink: #EC407A;
+$color__purple: #AB47BC;
+$color__blue: #28aae2;
+$color__green: #348236;
+
+// Font-Family
+$font-family__base: Arial, sans-serif;
+$font-family__heading: Georgia, serif;
+
+// Font-Sizes
+$font-size__base: 20px;
+$font-size__h1: 2.2rem; // 44px
+$font-size__h2: 1.5rem; // 30px
+$font-size__h3: 1.2rem; // 24px
+$font-size__h4: 1rem; // 20px
+$font-size__small: 0.8rem; // 16px
+$font-size__large: 1.2rem; // 24px
+$font-size__huge: 4.2rem; // 84px
+
+// Font Line-Height
+$font-line-height__base: 1.45;
+$font-line-height__heading: 1.2;
+
+// Font-Weight:
+$font-weight__light: 300;
+$font-weight__regular: 400;
+$font-weight__bold: 600;
+
+// Gutters
+$gutter__base: 50px;
+$gutter__grid: 50px;
+
+:root {
+  // CSS Variables in here
+}
