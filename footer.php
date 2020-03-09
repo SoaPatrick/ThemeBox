@@ -11,14 +11,17 @@
 
 ?>
 
-	</div><!-- #content -->
+	</div>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+  <?php get_sidebar(); ?>
+
+	<footer class="site-footer">
+		<div>
 			&copy; <?php echo date('Y'); ?> by SoaPatrick
 		</div>
 	</footer>
-</div><!-- #page -->
+
+</div>
 
 <?php wp_footer(); ?>
 

@@ -21,32 +21,32 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div class="site">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
+	<header class="site-header">
+		<div>
 			<?php
 			if ( is_front_page() && is_home() ) :
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
 			else :
 				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
 			?>
-			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+			<p><?php bloginfo( 'description' ); ?></p>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'primary',
-				'menu_id'        => 'primary-menu',
+				'menu_id'        => '',
 			) );
 			?>
 		</nav>
 	</header>
 
-	<div id="content" class="site-content">
+	<div class="site-content">
