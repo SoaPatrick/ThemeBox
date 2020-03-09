@@ -7,11 +7,11 @@
  * @package themebox
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'sidebar' ) ) {
 	return;
 }
 ?>
 
-<aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+<aside class="site-sidebar">
+	<?php dynamic_sidebar( 'sidebar' ); ?>
 </aside>

@@ -15,12 +15,3 @@ function themebox_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'themebox_scripts' );
-
-
-/**
- * Deregister Embed script
- */
-function themebox_deregister_scripts(){
-	wp_deregister_script( 'wp-embed' );
-}
-add_action( 'wp_footer', 'themebox_deregister_scripts' );
