@@ -4,13 +4,13 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  *
- * @package mch-group-one
+ * @package themebox
  */
 
 function themebox_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'mch-group-one' ),
+		'name'          => esc_html_x( 'Sidebar', 'sidebar widget name', 'themebox' ),
 		'id'            => 'sidebar',
 		'before_widget' => '<section>',
 		'after_widget'  => '</section>',

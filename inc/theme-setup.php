@@ -40,7 +40,7 @@ if ( ! function_exists( 'themebox_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary', 'themebox' ),
+      'primary' => esc_html_x( 'Primary', 'primary menu name', 'themebox' ),
 		) );
 
 		// Switch default core markup for search form, comment form, and comments
