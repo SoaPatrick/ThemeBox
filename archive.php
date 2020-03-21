@@ -8,28 +8,27 @@
  */
 
 get_header();
-  if ( have_posts() ) : ?>
 
-    <header>
-      <?php
-      the_archive_title( '<h1>', '</h1>' );
-      the_archive_description( '<div>', '</div>' );
-      ?>
-    </header>
-
+  if ( have_posts() ) :
+    ?>
+      <section>
+        <header>
+          <?php
+            the_archive_title( '<h1>', '</h1>' );
+            the_archive_description( '<div>', '</div>' );
+          ?>
+        </header>
+        <?php
+          while ( have_posts() ) :
+            the_post();
+            get_template_part( 'partials/content/content', get_post_type() );
+          endwhile;
+          the_posts_navigation();
+        ?>
+      </section>
     <?php
-    while ( have_posts() ) :
-      the_post();
-      get_template_part( 'template-parts/content', get_post_type() );
-
-    endwhile;
-
-    the_posts_navigation();
-
   else :
-
-    get_template_part( 'template-parts/content', 'none' );
-
+    get_template_part( 'partials/content/content', 'none' );
   endif;
 
 get_footer();

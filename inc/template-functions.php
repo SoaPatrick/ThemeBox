@@ -79,6 +79,21 @@ add_filter( 'allowed_block_types', 'themebox_allowed_block_types' );
 
 
 /**
+ * Adds custom classes to the array of body classes.
+ */
+function themebox_one_body_classes( $classes ) {
+
+	// Adds a class of no-sidebar when there is no sidebar present.
+	if ( ! is_active_sidebar( 'sidebar' ) ) {
+		$classes[] = 'no-sidebar';
+  }
+
+	return $classes;
+}
+add_filter( 'body_class', 'themebox_one_body_classes' );
+
+
+/**
  * Prints HTML with meta information for the current post-date/time.
  */
 if ( ! function_exists( 'themebox_posted_on' ) ) :
@@ -132,17 +147,17 @@ if ( ! function_exists( 'themebox_entry_footer' ) ) :
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'themebox' ) );
+			$categories_list = get_the_category_list( esc_html_x( ', ', 'category list item separator', 'themebox' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'themebox' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<span class="cat-links">' . esc_html_x( 'Posted in %1$s', 'categories prefix', 'themebox' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'themebox' ) );
+			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'tag list item separator', 'themebox' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'themebox' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="tags-links">' . esc_html_x( 'Tagged %1$s', 'tags prefix ', 'themebox' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 	}
