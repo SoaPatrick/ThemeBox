@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: ThemeBox\n"
-"POT-Creation-Date: 2020-03-21 08:27+0100\n"
+"POT-Creation-Date: 2020-03-21 08:46+0100\n"
 "PO-Revision-Date: 2020-03-21 08:04+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -123,6 +123,21 @@ msgstr ""
 #, php-format
 msgctxt "search result title"
 msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:16
+msgctxt "search label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:17
+msgctxt "search placeholder"
+msgid "Search&hellip;"
+msgstr ""
+
+#: searchform.php:19
+msgctxt "search submit button"
+msgid "Search"
 msgstr ""
 
 #. Theme Name of the plugin/theme
