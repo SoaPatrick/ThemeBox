@@ -26,14 +26,14 @@ get_header();
 
     while ( have_posts() ) :
       the_post();
-      get_template_part( 'partials/content/content', get_post_type() );
+      get_template_part( 'template-partials/content/content', get_post_type() );
     endwhile;
 
     the_posts_navigation();
 
   else :
 
-    get_template_part( 'partials/content/content', 'none' );
+    get_template_part( 'template-partials/content/content', 'none' );
 
   endif;
 

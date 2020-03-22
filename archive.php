@@ -21,14 +21,14 @@ get_header();
         <?php
           while ( have_posts() ) :
             the_post();
-            get_template_part( 'partials/content/content', get_post_type() );
+            get_template_part( 'template-partials/content/content', get_post_type() );
           endwhile;
           the_posts_navigation();
         ?>
       </section>
     <?php
   else :
-    get_template_part( 'partials/content/content', 'none' );
+    get_template_part( 'template-partials/content/content', 'none' );
   endif;
 
 get_footer();

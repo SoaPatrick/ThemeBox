@@ -8,7 +8,11 @@
  */
 
 function themebox_scripts() {
-	wp_enqueue_style( 'themebox-style', get_stylesheet_uri() );
+  // deregister Gutenberg Block Styling Library
+  wp_dequeue_style( 'wp-block-library' );
+
+  wp_enqueue_style( 'themebox-style', get_stylesheet_uri() );
+  wp_enqueue_script( 'soapatrickseven-scripts', get_template_directory_uri() . '/assets/js/scripts.js', '','' , true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
