@@ -1,7 +1,7 @@
 ThemeBox
 =========
 
-Hi. I'm a starter theme called `ThemeBox`.
+Hi. I'm a starter theme called `ThemeBox`, I'm a modified version of the starter theme [underscores](https://underscores.me)
 
 Getting Started
 ---------------
@@ -29,3 +29,32 @@ To configure Bitbucket Pipelines, do the following steps. The current `bitbucket
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
+
+Requirements
+------------
+- Node
+- Gulp
+
+Installation
+------------
+
+Clone this repository and run:
+
+```
+npm install
+```
+
+Development
+-----------
+change the URL of your local Wordpress environment in the `gulpfile.js` then run:
+
+```
+npm run dev
+```
+
+Production
+----------
+
+```
+npm run build
+```
